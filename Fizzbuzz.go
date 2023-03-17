@@ -24,7 +24,7 @@ func main() {
 		}
 		a = append(a, s)
 	}
-	fmt.Println("Hello and welcome to a game of fizzbuzz! In this game, you will be asked to type 1-100 and if the number is divisible by 3, then type Fizz, if it is divisible by 5, then type Buzz, if it is dvisible by both numbers they type FizzBuzz. You have 3 lives, if you did not input the correct answer, then you will lose one live, if all 3 lives are gone, then you die. Your goal is too finish as fast as you can. Enjoy!(Enter G for new game)")
+	fmt.Println("Hello and welcome to a game of fizzbuzz! In this game, you will be asked to type 1-100 and if the number is divisible by 3, then type Fizz, if it is divisible by 5, then type Buzz, if it is dvisible by both numbers they type FizzBuzz. You have 3 lives, if you did not input the correct answer, then you will lose one live, if all 3 lives are gone, then you die. Your goal is to finish as fast as you can. Enjoy!(Enter G for new game)")
 
 	var b string
 	var lives int = 2
