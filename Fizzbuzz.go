@@ -6,13 +6,6 @@ import (
 	"time"
 )
 
-/*
-	func doEvery(d time.Duration, f func(time.Time)) {
-		for x := range time.Tick(d) {
-			f(x)
-		}
-	}
-*/
 func main() {
 
 	t0 := time.Now()
@@ -34,18 +27,10 @@ func main() {
 	fmt.Println("Hello and welcome to a game of fizzbuzz! In this game, you will be asked to type 1-100 and if the number is divisible by 3, then type Fizz, if it is divisible by 5, then type Buzz, if it is dvisible by both numbers they type FizzBuzz. You have 3 lives, if you did not input the correct answer, then you will lose one live, if all 3 lives are gone, then you die. Your goal is too finish as fast as you can. Enjoy!(Enter G for new game)")
 
 	var b string
-
-	/*func scam(t time.Time)  {
-		fmt.Scanln(&b)
-	}
-	*/
-
 	var lives int = 2
 Outerloop:
 
 	for v := 1; v < 102; v++ {
-		//time.Sleep(5 * time.Second)
-		//fmt.Println(a[v])
 		fmt.Scanln(&b)
 		if b == "G" {
 			main()
@@ -103,7 +88,6 @@ Outerloop:
 				}
 
 			}
-			//else if b == C
 		} else {
 			fmt.Println("Oh no, you lost a live! Be carful next time!")
 			lives = lives - 1
